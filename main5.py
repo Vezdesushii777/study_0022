@@ -1,0 +1,7 @@
+firstList = input("Введите список слов через запятую: ").split(',')
+firstSet = set(firstList)
+lenFirstSet = len(firstSet)
+print('Количество слов в сформированном списке без повторений: ', lenFirstSet)
+secondList = input('Для формирования второго списка введите {} слов(а): '.format(lenFirstSet)).split(',')
+firstDict = dict(zip(firstSet, secondList))
+print(firstDict)
